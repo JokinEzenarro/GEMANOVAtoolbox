@@ -1,15 +1,9 @@
 function out = PairwiseFactorPermutation(X, scl, p, realModel, f, plots)
-% PairwiseFactorPermutation
-% -------------------------------------------------------------------------
+% PairwiseFactorPermutation:
 % For ONE chosen factor f, perform pairwise permutation tests between ALL
 % its levels (pairwise). For each pair (l1,l2), we permute ONLY those two
 % levels within each stratum defined by the other factors (design-preserving),
-% refit GEMANOVA, and use as test statistic the absolute difference between
-% the two loadings in mode f:  |u_f(l1) - u_f(l2)|.
-%
-% Adds:
-%   - Global waitbar for the full process (all pairs x permutations)
-%   - Level x level grid plot: each upper-triangular tile is a pairwise test
+% refit GEMANOVA, and use as test statistic the explained variance.
 %
 % INPUTS
 %   X         : N-dimensional data array (same shape used to fit realModel)
@@ -28,7 +22,6 @@ function out = PairwiseFactorPermutation(X, scl, p, realModel, f, plots)
 %   out.stats_perm    : cell Kx1; each cell is a p-by-1 vector of permuted stats
 %   out.note          : description of the test statistic and H0
 %   out.table         : summary table
-% -------------------------------------------------------------------------
 
     if nargin < 6, plots = 0; end
 

@@ -20,16 +20,16 @@ FEATURES
 -----------------------------------------------------------
 FILES
 -----------------------------------------------------------
-GEMANOVAprocess.m         - Pipeline for running GEMANOVA analysis
-average_replicates.m      - Averages replicate measurements
-MatrixToHypercube.m       - Reshapes data matrix into hypercube format
-FitModel.m                - Wrapper for fitting GEMANOVA models
+GEMANOVAprocess.m           - Pipeline for running GEMANOVA analysis
+average_replicates.m        - Averages replicate measurements
+MatrixToHypercube.m         - Reshapes data matrix into hypercube format
+FitModel.m                  - Wrapper for fitting GEMANOVA models
 VarianceExplainedPerModel.m - Computes variance explained by factor combinations
-FullFactorPermutation.m   - Performs full-factor permutation tests
+FullFactorPermutation.m     - Performs full-factor permutation tests
 PairwiseFactorPermutation.m - Pairwise permutation testing of factors
-gemanova.m                - Core GEMANOVA fitting function
-gemanovaInit.m            - GEMANOVA with initial estimates
-pffitalpha.m              - Parameter fitting utility (alpha estimation)
+gemanova.m                  - Core GEMANOVA fitting function
+gemanovaInit.m              - GEMANOVA with initial estimates
+pffitalpha.m                - Parameter fitting utility (alpha estimation)
 
 -----------------------------------------------------------
 INSTALLATION
